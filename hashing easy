@@ -1,0 +1,30 @@
+max=int(input("enter hash table size"))
+ht=[]
+for i in range (max):
+        ht.append(-1)
+        
+print(ht)
+
+ans=1
+while (ans==1) :
+        print("enter the key which u want to insert")
+        key=int(input())
+        loc=key%max
+        if(ht [loc]==-1):
+                ht[loc]=key
+        else:
+
+                cnt=0 
+                while(ht [loc]!=-1):
+                        cnt=cnt+1 
+                        if(ent>max):
+                                print("hash table gets full")
+                                print(ht)
+                                break
+                        else:
+                                Loc= (Loc+1)%max
+                if (cnt<max):
+                        ht[Loc]=key
+        print("Do u want to insert one more key?")
+        ans-int(input ())
+print(ht)
